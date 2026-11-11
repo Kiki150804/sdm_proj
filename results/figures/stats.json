@@ -1,0 +1,73 @@
+{
+  "entities": 712,
+  "relations": 885,
+  "entity_types": {
+    "SPACECRAFT": 215,
+    "ORGANIZATION": 155,
+    "PERSON": 146,
+    "LOCATION": 73,
+    "MISSION": 66,
+    "CONCEPT": 25,
+    "EVENT": 17,
+    "PERSONS": 9
+  },
+  "levels": {
+    "0": {
+      "communities": 241,
+      "with_3plus": 72,
+      "largest": 23,
+      "mean_size": 2.954356846473029
+    },
+    "1": {
+      "communities": 136,
+      "with_3plus": 39,
+      "largest": 43,
+      "mean_size": 5.235294117647059
+    },
+    "2": {
+      "communities": 118,
+      "with_3plus": 21,
+      "largest": 62,
+      "mean_size": 6.033898305084746
+    }
+  },
+  "top_communities": [
+    {
+      "id": "L2-C0",
+      "title": "Evolution of American Spaceflight and Policy",
+      "size": 62,
+      "summary": "This report examines NASA's historical missions, spacecraft, and early human spaceflight programs like Project Mercury and Project Gemini, alongside modern space policy initiatives. NASA directed landmark endeavors such as the Apollo, Constellation, and Artemis programs, as well as the development of Saturn V, the Orion spacecraft, and the Space Launch System. McDonnell Aircraft served as the prime contractor for Mercury and Gemini spacecraft capsules, while key figures like Christopher C. Kraft Jr., Jim Chamberlin, and Gus Grissom provided vital leadership and engineering. Furthermore, the political administration shaped strategic lunar exploration goals through Space Policy Directive 1, guided by President Donald Trump and Vice President Mike Pence via the National Space Council. Together, these interconnected programs, industrial partnerships, and legislative mandates established the foundational technology and policy framework for American space exploration."
+    },
+    {
+      "id": "L2-C1",
+      "title": "Origins and Impact of Early Soviet Rocketry",
+      "size": 50,
+      "summary": "This community encompasses the pioneering figures, organizations, and institutions that laid the technical foundation of early Soviet rocketry, aviation, and space exploration. Key entities include prominent engineers and scientists such as Sergei Korolev, Friedrich Zander, Valentin Glushko, Nikolai Tikhomirov, and Georgy Langemak, alongside crucial research groups like GIRD, the Gas Dynamics Laboratory, and RNII. These interrelated individuals and groups drove major technological advancements, including hybrid propellant rocket launches, the R-7 rocket, the Katyusha rocket launcher, and milestones like Alexei Leonov's spacewalk. However, the community's progress also suffered severe setbacks due to political repression during the Great Purge under Joseph Stalin, which led to the arrest, execution, or imprisonment of several leading scientists in the Gulag. Ultimately, the combined efforts of these innovators and the turbulent political environment profoundly shaped the trajectory of the Soviet space program and missile technology."
+    },
+    {
+      "id": "L2-C2",
+      "title": "Global Space Agencies, Missions, and Astronomical Observatories",
+      "size": 47,
+      "summary": "This report examines major space organizations like the European Space Agency and NASA, highlighting their leadership, launch infrastructure, and historical spaceflight programs. It details key astronomical instruments, including the Hubble Space Telescope and the James Webb Space Telescope, alongside their development, servicing missions, and operational locations. The community also covers significant international collaborations, such as partnerships with the Canadian Space Agency, the Artemis programme, and support for Indian space missions. Furthermore, it touches upon scientific initiatives and deep-space survival studies involving resilient organisms like Deinococcus radiodurans."
+    },
+    {
+      "id": "L2-C3",
+      "title": "NASA History and Global Space Cooperation",
+      "size": 46,
+      "summary": "NASA leads the U.S. civil space program, managing major initiatives like the Space Shuttle and Artemis programs while collaborating globally with agencies such as JAXA. The International Space Station serves as a primary habitable laboratory supported by international partnerships involving NASA, ESA, Roscosmos, JAXA, and CSA. Key historical milestones include John Glenn's Mercury flight, the Space Shuttle program concluding with STS-135, and various cargo services and robotic rover projects. Additionally, Jared Isaacman serves as the NASA administrator as of December 2025. These entities and missions demonstrate a rich history of crewed spaceflight and ongoing international cooperation in space exploration."
+    },
+    {
+      "id": "L2-C4",
+      "title": "China's Lunar Exploration and Space Program",
+      "size": 42,
+      "summary": "This report outlines China's comprehensive space and lunar exploration programs managed by the China National Space Administration (CNSA), which operates under the Ministry of Industry and Information Technology. Key achievements include the historic Chang'e missions\u2014such as Chang'e 4's far-side Moon landing and sample returns from Chang'e 5 and 6\u2014alongside the Queqiao relay satellite and Yutu-2 rover. The aerospace network also encompasses the Tiangong space station, Mars missions like Tianwen-1 with the Zhurong rover, near-Earth asteroid exploration via Tianwen-2, and contributions from institutions like the Harbin Institute of Technology. These collaborative efforts and missions have earned international recognition, including prestigious awards from the International Astronautical Federation and the Royal Aeronautical Society."
+    },
+    {
+      "id": "L2-C5",
+      "title": "Life, Career, and Historic Flight of Yuri Gagarin",
+      "size": 41,
+      "summary": "Yuri Gagarin was a pioneering Soviet cosmonaut who became the first human to journey into outer space aboard the Vostok 1 spacecraft, launched from the Baikonur Cosmodrome using a Vostok-K rocket. His selection for the mission was overseen by Major General Konstantin Borodin's medical commission, with support from figures like Nikolai Kamanin, while fellow cosmonauts Gherman Titov and Grigori Nelyubov served as his backups. Following his monumental achievement and receipt of the Hero of the Soviet Union award, Gagarin served in various roles, including at the Cosmonaut Training Centre. Tragically, Gagarin's life was cut short years later when he and flight instructor Vladimir Seryogin were killed in a MiG-15 aircraft crash near Kirzhach. These interconnected events and figures form the foundational history of early Soviet human space exploration."
+    }
+  ],
+  "eval_questions": 12
+}

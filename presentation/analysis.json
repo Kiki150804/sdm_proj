@@ -1,0 +1,14 @@
+{
+  "left": [
+    "**Fairer budget helped GraphRAG: **diversity 30% → 50%, comprehensiveness 40% → 42%, empowerment 30% → 42%",
+    "**Breadth: **GraphRAG answers mention 2.4× as many graph entities and touch 29 vs 13 communities",
+    "**Directness 0%: **summaries of summaries read more abstract; the paper also finds vector RAG more direct",
+    "**Cost: **~23 LLM calls and ~5.7 min per question vs 1 call and ~10 s for vector RAG"
+  ],
+  "right": [
+    "**Why not a clear win?**",
+    "Small corpus: 5 chunks already cover ~8% of it",
+    "Partial answers still short: 6.5k of the 27k budget used",
+    "Weak extraction model (Flash-Lite): only 21 rich top-level communities"
+  ]
+}

@@ -65,8 +65,8 @@ limits:
   where it stopped at no extra cost.
 - **Budget**: large chunks (one extraction call each), extractive summaries
   for communities under 3 entities, reused reports when a parent community
-  equals its only child, at most 15 communities mapped per question, and one
-  judge call per answer order covering all four criteria.
+  equals its only child, only communities with 3+ entities mapped per question,
+  and one judge call per answer order covering all four criteria.
   `build_index.py --estimate` prints the expected call count without calling.
 
 ## Setup
@@ -100,9 +100,16 @@ python scripts/ask.py --index data/index "What are the main themes in this colle
 python scripts/ask.py --index data/index --route baseline "What are the main themes in this collection?"
 python scripts/ask.py --index data/index "How is Wernher von Braun related to Saturn V?"
 
-# 4. evaluate GraphRAG vs vector RAG with the LLM judge; add --levels 1,2,3 to compare levels
-python scripts/evaluate.py --index data/index --questions data/questions.txt --out results/eval.json
+# 4. evaluate GraphRAG vs vector RAG with the LLM judge; add --levels 1,2 to compare levels
+GEMINI_MODEL=gemini-3.1-flash-lite python scripts/evaluate.py --index data/index --questions data/questions.txt --out results/eval.json
+
+# 5. charts and statistics for the report (results/figures/)
+python scripts/make_figures.py --index data/index --eval results/eval.json --out results/figures
 ```
+
+The index was built with `gemini-3.5-flash-lite`; the final evaluation
+(both systems' answers and the judge) used `gemini-3.1-flash-lite`, because
+the first model's daily free quota was used up by the build.
 
 `evaluate.py` reports, per system: entity coverage and community diversity
 of the answers (cheap proxies), context size, latency, and the LLM-judge
@@ -116,7 +123,11 @@ cancel position bias. Full answers and verdicts go to the JSON file.
   networkx; Leiden mainly adds a guarantee that communities are connected.
 - **Smaller scale**: ~65k tokens instead of ~1M, with no "gleaning" passes
   during extraction and no claim extraction, to fit the free tier.
-- **Map step capped** at the 15 largest communities of the chosen level.
+- **Equal context budget**: the reduce step packs up to ~27k characters of
+  partial answers, the same as the baseline's 5 chunks, so both systems
+  answer from the same amount of text. (A first run with short partial
+  answers gave GraphRAG only ~2.4k characters; it is kept in
+  `results/eval_v1_unbalanced.json` for comparison.)
 - **Offline fallbacks** (regex extraction, TF-IDF, extractive text) exist so
   the code runs without a key; results for the report should
   come from a Gemini-built index.
@@ -142,6 +153,7 @@ scripts/
   build_index.py     # build and persist an index
   ask.py             # query an index
   evaluate.py        # GraphRAG vs. vector RAG evaluation
+  make_figures.py    # charts + index statistics for the report
 data/
   corpus/            # evaluation corpus (32 Wikipedia articles)
   questions.txt      # global evaluation questions

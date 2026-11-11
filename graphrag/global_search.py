@@ -10,8 +10,10 @@ Reduce: the remaining partial answers are sorted by score, packed into a
 context budget, and combined into one global answer (by Gemini, or as a
 list of themes offline).
 
-To stay within free-tier limits, at most `max_communities` communities
-(the largest ones) are mapped per question.
+Every community with at least `min_size` entities is mapped (smaller ones
+only get extractive summaries anyway), and the reduce context budget
+(`max_chars`) matches the vector RAG baseline's context (~5 chunks, ~27k
+characters), so both systems answer from the same amount of text.
 """
 from __future__ import annotations
 
@@ -26,7 +28,7 @@ from .communities import Community, CommunityStore
 _SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
 
 _MAP_PROMPT = """Using ONLY the community report below, answer the question as well as the
-report allows. Return JSON {{"answer": a short partial answer (max 5 sentences), "score":
+report allows. Return JSON {{"answer": a detailed partial answer (1-3 paragraphs) that keeps the specific names, dates, numbers and facts from the report, "score":
 integer 0-100 for how helpful this report is for answering the question (0 = irrelevant)}}.
 
 Report: {title}
@@ -96,7 +98,7 @@ def map_step(query: str, communities: list[Community], llm=None) -> list[Partial
     return sorted(partials, key=lambda p: p.score, reverse=True)
 
 
-def reduce_step(query: str, partials: list[PartialAnswer], llm=None, max_chars: int = 8000) -> dict:
+def reduce_step(query: str, partials: list[PartialAnswer], llm=None, max_chars: int = 27000) -> dict:
     packed, used = [], 0
     for partial in partials:
         if used + len(partial.text) > max_chars:
@@ -125,13 +127,16 @@ def default_level(store: CommunityStore) -> int:
 
 
 def global_answer(
-    query: str, store: CommunityStore, level: int | None = None, llm=None, max_communities: int = 15
+    query: str, store: CommunityStore, level: int | None = None, llm=None, max_communities: int | None = None,
+    min_size: int = 3,
 ) -> dict:
     if not store.levels:
         return {"answer": "No communities have been built.", "backend": "extractive", "level": None, "partials": []}
     if level is None:
         level = default_level(store)
-    communities = sorted(store.at_level(level), key=lambda c: c.rank, reverse=True)[:max_communities]
+    communities = sorted(
+        (c for c in store.at_level(level) if len(c.nodes) >= min_size), key=lambda c: c.rank, reverse=True
+    )[:max_communities]
     partials = map_step(query, communities, llm)
     result = reduce_step(query, partials, llm)
     result.update(level=level, partials=partials)
