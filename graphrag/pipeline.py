@@ -74,7 +74,7 @@ class GraphRAGPipeline:
         if route is not None and route != decision.route:
             decision = RoutingDecision(route, decision.matched_entities, f"route forced to {route}")
         if decision.route == "global":
-            generation = global_answer(query, self.community_store, level=level, llm=self.llm)
+            generation = global_answer(query, self.community_store, level=level, llm=self.llm, graph_store=self.graph_store)
             return {
                 "query": query,
                 "route": "global",

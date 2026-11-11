@@ -38,6 +38,7 @@ across the whole corpus) of the kind the paper evaluates.
    communities.py   -- Louvain hierarchy (level 0 = finest) + bottom-up Gemini reports
          |
    global_search.py -- map: partial answer + 0-100 score per community
+                       (reads the community report + its entity/relation descriptions)
                        reduce: merge the best partial answers into one answer
 
    baseline: vector_store.py (Gemini embeddings) -> top-k chunks -> Gemini answer
@@ -116,6 +117,22 @@ of the answers (cheap proxies), context size, latency, and the LLM-judge
 win rate against vector RAG on comprehensiveness, diversity, empowerment and
 directness, the paper's four criteria. Each pair is judged in both orders to
 cancel position bias. Full answers and verdicts go to the JSON file.
+
+## Results
+
+LLM judge, GraphRAG (level 2) vs vector RAG, same corpus and chunks:
+
+| Run | Comprehensiveness | Diversity | Empowerment | Directness |
+|---|---|---|---|---|
+| Unbalanced context (10 q.) | 40% | 30% | 30% | 20% |
+| Equal 27k budget, summaries only (12 q.) | 42% | 50% | 42% | 0% |
+| + community details in the map step (6 q.) | **100%** | **100%** | **100%** | 0% (4 ties) |
+
+The final run judged 6 of 12 questions before the free daily quota ran out;
+rerunning `evaluate.py` resumes from the cache. Vector RAG stays more direct,
+as in the paper. Files: `results/eval.json` (final),
+`results/eval_v2_summaries_only.json`, `results/eval_v1_unbalanced.json`,
+figures in `results/figures/`, slides in `presentation/`.
 
 ## Differences from the paper
 

@@ -2,29 +2,25 @@
 === [1/12] What are the main themes in this collection of documents about space exploration?
 
 [graphrag_L2 | gemini]
-The provided documents offer a comprehensive overview of the history, technology, and political landscape of global space exploration. The main themes can be categorized as follows:
+The provided documents offer a comprehensive overview of the history, technology, and geopolitical context of global space exploration. The main themes can be categorized as follows:
 
-### **National Space Programs and Institutional Development**
-*   **United States:** NASA’s evolution is defined by landmark programs including Project Mercury, Gemini, Apollo, the Space Shuttle, and the current Artemis program. Key administrative and policy frameworks, such as Space Policy Directive 1 and the Augustine Committee, have shaped these trajectories. Operations are supported by a network of facilities, including NASA Headquarters in Washington, D.C., and the Manned Spacecraft Center in Houston.
-*   **Soviet Union and Russia:** Early Soviet efforts were driven by foundational figures like Sergei Korolev and Valentin Glushko, utilizing research institutions like GIRD and the Gas Dynamics Laboratory. The program is noted for the R-7 rocket, the Sputnik satellites, and the human spaceflight of Yuri Gagarin. Later, the focus shifted to long-term orbital presence through the Salyut and Mir space stations, characterized by modular construction and international cooperation.
-*   **China:** The China National Space Administration (CNSA) has demonstrated a broad scope of capabilities, ranging from lunar exploration (Chang'e missions, Yutu-2 rover, and Queqiao relay satellite) to the Tiangong space station and Mars exploration (Tianwen-1 and Zhurong rover).
-*   **India:** India’s space program, established through the leadership of figures like Vikram Sarabhai and organizations like ISRO, has evolved from early satellite launches to advanced launch vehicles (SLV-3, LVM3) and the successful Chandrayaan-3 lunar mission.
-*   **Europe:** The European Space Agency (ESA) emerged from foundational organizations like ESRO, established by scientists such as Edoardo Amaldi and Pierre Auger. It now plays a critical role in international space operations and astronomical research.
+**1. Evolution of Human Spaceflight and Lunar Exploration**
+A central theme is the progression of human spaceflight, beginning with early American programs like Mercury, Gemini, and Apollo, and Soviet initiatives such as the Vostok program. These efforts were driven by the Cold War "Space Race," characterized by intense rivalry and the goal of lunar exploration. Key milestones include the first human orbital flight by Yuri Gagarin and the historic Apollo 11 Moon landing. Modern efforts have shifted toward returning to the Moon through programs like NASA’s Artemis, while also incorporating commercial partnerships with companies like SpaceX.
 
-### **Technological Milestones and Deep-Space Exploration**
-*   **Launch Vehicles and Hardware:** The development of critical hardware has been central to exploration, including the Saturn V, the R-7 missile, the Falcon 9, and the Dragon 2 capsule.
-*   **Deep-Space Missions:** Robotic exploration has expanded our knowledge of the solar system through missions like the Voyager probes, Pioneer 10 and 11, and New Horizons. Mars exploration has been a major focus, utilizing rovers such as Sojourner, Spirit, Opportunity, Curiosity, and Perseverance, as well as the Ingenuity helicopter.
-*   **Astronomical Observatories:** Global agencies maintain sophisticated instruments like the Hubble and James Webb Space Telescopes to conduct deep-space research.
+**2. Institutional Development and International Cooperation**
+Space exploration has evolved from nationalistic competition to global collaboration. This is exemplified by the International Space Station (ISS), a long-term partnership between NASA, Roscosmos, ESA, JAXA, and CSA. Similarly, European space efforts consolidated through the formation of the European Space Agency (ESA), while India’s ISRO has grown from early committees into a robust program focused on indigenous capabilities and lunar missions like Chandrayaan. Conversely, the documents also note how geopolitical tensions can lead to the suspension of international cooperation.
 
-### **Political, Military, and Social Context**
-*   **The Cold War:** The space race between the U.S. and the Soviet Union was a primary driver of technological and military advancement, characterized by intense rivalry that eventually transitioned into cooperation.
-*   **Political Influence:** Space policy is frequently dictated by executive leadership and legislative mandates. However, this environment has also been marked by turbulence, such as the impact of the Great Purge on Soviet scientists and the influence of presidential directives on U.S. mission goals.
-*   **International Collaboration:** Modern space exploration is increasingly defined by partnerships between agencies like NASA, ESA, Roscosmos, JAXA, CSA, and ISRO, particularly regarding the International Space Station and the Artemis program.
-*   **Private Sector:** The emergence of commercial entities like SpaceX has introduced new operational models, including reusable launch technology and strategic partnerships with government agencies.
+**3. Technological Innovation and Rocketry**
+The history of spaceflight is defined by rapid technological advancement. This includes the development of foundational rockets like the Soviet R-7 and the American Saturn V, as well as the evolution of launch vehicles such as the Space Shuttle, Ariane series, and SpaceX’s Falcon and Starship systems. Robotic exploration has also been a major focus, with missions to Mars (such as the Sojourner, Spirit, Opportunity, Curiosity, and Perseverance rovers) and deep-space probes like Voyager and Pioneer expanding our understanding of the solar system.
 
-### **Human Factors and Scientific Research**
-*   **Key Figures:** The history of spaceflight is shaped by the contributions of engineers, administrators, and astronauts, including Wernher von Braun, Christopher C. Kraft Jr., Neil Armstrong, and Yuri Gagarin.
-*   **Scientific Initiatives:** Beyond exploration, programs include deep-space survival studies, such as research into the resilience of organisms like *Deinococcus radiodurans*, and the management of astronaut health and safety.
+**4. Political and Organizational Context**
+Space programs have been deeply influenced by political environments. In the Soviet Union, the scientific community faced significant disruption during the Great Purge, which impacted key figures like Sergei Korolev. In the United States, space policy has been shaped by presidential mandates, legislative directives, and the administrative structure of agencies like NASA, which coordinates between headquarters in Washington and field centers like the Manned Spacecraft Center in Houston.
+
+**5. Emerging Global Programs**
+The documents highlight the rise of new major players in space, particularly China. The China National Space Administration (CNSA) has achieved significant milestones, including the first landing on the far side of the Moon, sample return missions, the construction of the Tiangong space station, and successful Mars exploration with the Zhurong rover.
+
+**6. Challenges and Risks**
+Space exploration is presented as a high-risk endeavor, marked by technical failures, accidents (such as the Apollo 13 oxygen tank explosion and the loss of Yuri Gagarin), and the ongoing management of orbital debris. These challenges underscore the necessity of rigorous engineering, mission control improvisation, and the constant pursuit of safety in both human and robotic missions.
 
 [vector_rag | gemini]
 Based on the provided documents, the main themes regarding space exploration are:
@@ -41,16 +37,21 @@ Based on the provided documents, the main themes regarding space exploration are
 === [2/12] How has the balance between government space agencies and private companies changed over time?
 
 [graphrag_L2 | gemini]
-While the provided documents do not offer a longitudinal analysis of how the balance of power between government space agencies and private companies has shifted over time, they do illustrate a consistent history of collaboration between NASA and the private sector.
+The relationship between government space agencies and private industry has evolved from a traditional prime contractor model, where the government maintained centralized control, to a modern collaborative partnership where private entities play an increasingly integrated role in operational logistics and service delivery.
 
-**Historical Industrial Partnerships**
-Since the inception of human spaceflight, NASA has relied on private contractors to provide essential technology and hardware. During the early Mercury and Gemini programs, McDonnell Aircraft served as the prime contractor for spacecraft capsules. Similarly, the Apollo program relied on a network of private entities to develop the Saturn V rocket, including Rocketdyne for engines, the Douglas Aircraft Company for hydrolox stages, and IBM for instrument units.
+### The Historical Model: Government-Led Initiatives
+During the mid-20th century, space exploration was defined by government-led programs driven by national goals, such as the Cold War-era Space Race. In this era, agencies like NASA and the U.S. Army served as the primary design hubs and mission managers. 
+*   **Division of Labor:** While the government oversaw overarching mission design and management, it relied on private companies to act as outside contractors for specific technical hardware. For example, during the Apollo program, the Marshall Space Flight Center directed development while companies like Boeing, North American Aviation, Douglas Aircraft Company, Rocketdyne, and IBM provided specific components for the Saturn V rocket.
+*   **Prime Contractor Model:** Early programs like Project Mercury and Project Gemini utilized a prime contractor model, where companies such as McDonnell Aircraft Corporation were contracted to build spacecraft capsules under strict government oversight. This centralized approach continued through the Space Shuttle era, which remained a government-operated program.
 
-**Modern Collaborative Dynamics**
-In the contemporary era, this relationship continues through significant partnerships between government agencies and private firms. SpaceX, founded in 2002, exemplifies this modern dynamic by engaging in missions to the International Space Station and geostationary transfer orbits. These operations involve navigating regulatory oversight from the Federal Aviation Administration and maintaining partnerships with the United States Department of Defense.
+### The Modern Era: Commercial Partnerships
+In recent decades, the dynamic has shifted toward a model where NASA acts as a major customer and partner for commercial entities. This transition is characterized by the integration of private companies into the operational logistics of space exploration.
+*   **Commercial Services:** NASA has moved toward contracting commercial entities for essential services, such as cargo and crew transportation. Programs like the Commercial Orbital Transportation Services (COTS) and Commercial Resupply Services have been pivotal in this shift.
+*   **Key Players:** SpaceX, for instance, transitioned from a company reliant on internal funding and early Department of Defense procurement to a major government contractor. It now provides cargo and crew missions to the International Space Station (ISS) using the Falcon 9 launch vehicle and Dragon spacecraft. Similarly, Orbital Sciences utilized the Cygnus spacecraft for ISS cargo delivery, and Boeing is currently developing the Starliner capsule for crewed service.
+*   **Collaborative Oversight:** While government agencies like NASA, the ESA, and others maintain oversight and manage international partnerships—such as the cooperative management of the ISS and the Artemis program—they now rely on private companies to handle the development and execution of critical transportation and resupply tasks.
 
-**Government Leadership and Oversight**
-Despite these industrial partnerships, NASA has maintained a central role in directing the U.S. civil space program. The agency continues to lead major initiatives—such as the Space Shuttle, Constellation, and Artemis programs—while managing cargo services and robotic rover projects. Furthermore, political administrations continue to shape space policy through initiatives like Space Policy Directive 1, and NASA maintains a broader framework of international cooperation with global agencies such as JAXA, ESA, Roscosmos, and CSA.
+### Global Context
+While this shift is prominent in the United States, it is not universal across all space programs. Documentation regarding other nations, such as China’s CNSA, India’s ISRO, and the Russian space program, indicates that these agencies continue to operate primarily through state-led institutions and government-affiliated organizations, with little to no evidence of a similar transition toward private sector partnerships.
 
 [vector_rag | gemini]
 Based on the provided context, the balance between government space agencies and private companies has shifted toward increased collaboration and the integration of commercial initiatives into government programs:
@@ -63,22 +64,24 @@ Based on the provided context, the balance between government space agencies and
 === [3/12] What role did competition between nations play in the development of spaceflight?
 
 [graphrag_L2 | gemini]
-The development of spaceflight has been significantly shaped by the geopolitical rivalry between the United States and the Soviet Union during the Cold War. This competition served as the primary catalyst for rapid advancements in space technology, as each nation sought to surpass the other’s milestones.
+The development of spaceflight in the 20th century was fundamentally shaped by the geopolitical rivalry between the United States and the Soviet Union, a period known as the Space Race. This competition served as the primary catalyst for rapid technological advancements, as both nations sought to demonstrate military and technological superiority.
 
-**The Cold War Space Race**
-The intense pressure of this rivalry drove both nations to achieve historic breakthroughs. Early Soviet successes—including the launch of Sputnik 1, the development of the R-7 Semyorka missile, and the Luna 2 lunar mission—compelled the United States to accelerate its own space programs. These initiatives began under President Dwight D. Eisenhower with Project Mercury and were further solidified when President John F. Kennedy established the national goal of landing an astronaut on the Moon by the end of the 1960s.
+### The Origins of the Space Race
+The race was ignited by Cold War tensions and the drive to develop intercontinental ballistic missiles (ICBMs). The Soviet Union’s launch of Sputnik 1 in October 1957 triggered the "Sputnik crisis" in the United States, accelerating American efforts in missile defense and space exploration. Soviet efforts were led by the OKB-1 design bureau, which developed the R-7 rocket—initially an ICBM—to facilitate the launch of satellites like "Object PS" (Sputnik) to ensure the USSR beat the United States into space.
 
-**Technological and Military Advancements**
-The competitive nature of the era spurred significant progress in both military and space-related technology. This included the development and testing of American intercontinental ballistic missiles, such as the Atlas missile. These advancements were essential to the broader goal of achieving lunar landings.
+### American Response and Policy
+In the United States, the competitive environment led to significant policy shifts and the creation of major programs:
+*   **Institutional Growth:** President Eisenhower initiated Project Mercury to compete with the Soviet Vostok programme. NASA was pressured to perform in-house design studies and request budget increases to meet national objectives.
+*   **The Moon Landing Goal:** Following Soviet successes, President John F. Kennedy formalized the goal of landing a man on the Moon by the end of the 1960s in his 1961 "Urgent National Needs" speech. This commitment drove the Apollo program.
+*   **Technology Transfer:** The U.S. leveraged expertise from German rocket engineers, such as Wernher von Braun, brought to the country via Operation Paperclip. Their foundational work was instrumental in developing the Saturn V, the super heavy-lift vehicle that enabled lunar missions.
 
-**Transition to Cooperation**
-While the initial development of spaceflight was defined by intense competition, the legacy of this era eventually shifted toward international cooperation. The historic milestones achieved during the race between the United States and the Soviet Union laid the groundwork for later cooperation agreements between the United States and the Russian Federation.
+### Competitive Dynamics
+The rivalry was intense, with Soviet Premier Nikita Khrushchev declining a joint Moon landing proposal from President Kennedy. The pressure to outperform the other superpower resulted in historic milestones, including the first human spaceflight and the first lunar landings. In the U.S., this context also influenced administrative decisions, such as President Eisenhower’s directive that early astronauts be selected from the military to address concerns regarding a perceived "missile gap."
 
-**Other Perspectives on Space Development**
-While the Cold War rivalry was a major driver of early spaceflight, other developments in the field have been characterized by different motivations:
-* **Scientific and Infrastructure Focus:** Many modern space initiatives, such as those involving NASA, the European Space Agency, and the Artemis program, focus on infrastructure, scientific research, and international partnerships rather than geopolitical competition.
-* **Technical Leadership:** The development of critical hardware, such as the Saturn V rocket, was driven by the leadership of figures like Wernher von Braun and the technical requirements of the Apollo program, rather than explicit geopolitical analysis.
-* **National Evolution and Collaboration:** The growth of space programs in nations like India, led by figures such as Vikram Sarabhai, has been driven by internal evolution and foundational leadership. Similarly, the history of Soviet and Russian space stations, such as Mir and Salyut, is defined by technical milestones and international collaborations (such as the STS-71 mission) rather than competitive rivalry. In these contexts, international efforts—such as India’s 1975 collaboration with the Soviet agency Interkosmos—are framed as milestones of cooperation.
+### Evolution Toward Collaboration
+While early space exploration was defined by this intense competition, the landscape eventually shifted toward international cooperation. Later programs, such as the International Space Station (ISS), involved partnerships between agencies like NASA, Roscosmos, the European Space Agency (ESA), and others. Similarly, India’s space program, while developing indigenous capabilities, engaged in strategic alliances, such as the 1975 launch of its first satellite, Aryabhata, through a partnership with the Soviet Interkosmos program. 
+
+While modern entities like SpaceX and national programs in China have achieved significant milestones, current documentation often frames these developments through corporate or institutional growth rather than the explicit geopolitical competitive pressures that defined the early Space Race.
 
 [vector_rag | gemini]
 Based on the provided context, competition between the United States and the Soviet Union served as a primary driver for the development of spaceflight in the following ways:
@@ -94,27 +97,27 @@ Ultimately, the competition acted as a catalyst that transformed space explorati
 === [4/12] What are the major technological milestones described across the corpus, and how do they build on each other?
 
 [graphrag_L2 | gemini]
-The technological milestones across the global space program are characterized by a tiered progression, where foundational rocketry and satellite capabilities enable increasingly complex missions, including human spaceflight, modular station construction, and deep-space exploration.
+The history of space exploration is characterized by an incremental progression of technological milestones, where foundational research and early successes serve as the basis for increasingly complex missions.
 
-### Foundational Rocketry and Early Satellites
-The development of space programs often began with military missile technology. In the Soviet Union, the R-7 rocket, designed by OKB-1, served as the foundational technology for the launch of Sputnik 1. Similarly, in the United States, Wernher von Braun’s early work on the V-2 rocket transitioned into the development of the Saturn V super heavy-lift vehicle, which integrated components from various contractors to support the Apollo program. India’s program followed a similar trajectory, beginning with the 1975 launch of the Aryabhata satellite—facilitated by international collaboration—which paved the way for indigenous launch vehicles like the SLV-3 and LVM3.
+### Early Rocketry and Foundational Launch Vehicles
+The development of modern spaceflight began with early propulsion experiments, such as the Soviet GIRD-09 hybrid rocket (1933) and the German Aggregat-4 (V-2) rocket. Following World War II, the transfer of German expertise (Operation Paperclip) to the U.S. accelerated American missile and space development. In the Soviet Union, the R-7 rocket—originally designed as an ICBM—became the foundational technology for the first artificial satellite, Sputnik 1 (1957), and later for human spaceflight.
 
 ### Human Spaceflight and Lunar Exploration
-Early human spaceflight programs, such as the U.S. Project Mercury and Project Gemini, established the necessary capabilities for crewed missions. These efforts culminated in the Apollo program, which achieved the first human Moon landing. This progression is mirrored in other nations:
-*   **Soviet Union:** The Vostok 1 mission marked the first human journey into space, while later efforts focused on long-duration flight and station operations.
-*   **India:** The Chandrayaan-3 mission demonstrated a progression from simple satellite deployment to sophisticated lunar surface operations using the Vikram lander and Pragyan rover.
-*   **China:** The Chang'e program established a systematic advancement from lunar surface operations and relay communications (Chang'e 4) to complex sample retrieval (Chang'e 5 and 6).
+Early human spaceflight programs, such as the U.S. Project Mercury and the Soviet Vostok program, established the requirements for orbital survival. These were followed by more complex maneuvers:
+*   **Orbital Maneuvers:** The U.S. Gemini program (including Gemini 8) pioneered docking and long-duration flight, which were essential precursors to the Apollo lunar missions.
+*   **Lunar Landings:** The Apollo program utilized the Saturn V super heavy-lift rocket to achieve the first human lunar landings. This era also saw the development of the Lunar Module and iterative safety improvements following incidents like the Apollo 13 oxygen tank explosion.
+*   **Modern Lunar Exploration:** China’s Lunar Exploration Program follows a four-phase incremental approach, modeling its far-side Chang'e 4 mission after the architecture of the Chang'e 3/Yutu rover. Similarly, India’s ISRO progressed from early satellite launches (Aryabhata) to the successful soft landing of the Chandrayaan-3 mission, building on data from the earlier Chandrayaan-2.
 
-### Space Stations and Modular Infrastructure
-Technological evolution in orbital presence transitioned from individual stations to modular, expandable complexes. The Soviet Salyut 7 program provided the operational experience necessary for the construction of the Mir space station, which utilized specialized modules and TKS-derived space tugs to support long-duration human flight. This infrastructure eventually evolved into the International Space Station (ISS), a collaborative effort involving NASA, ESA, Roscosmos, JAXA, and CSA.
+### Space Stations and Orbital Infrastructure
+Space station development evolved from early modular concepts to long-term international cooperation:
+*   **Soviet/Russian Legacy:** The Salyut and Mir programs pioneered modular assembly and long-duration human flight, with Mir serving as a testbed for international cooperation.
+*   **U.S. and International Efforts:** Skylab provided early experience, leading to the Space Shuttle program, which was instrumental in assembling the International Space Station (ISS). The ISS represents a shift toward a collaborative, multi-agency, and commercialized model of orbital maintenance.
 
-### Robotic and Interplanetary Exploration
-Robotic exploration has evolved from simple flybys and tethered rovers to advanced mobile laboratories. 
-*   **Mars Exploration:** Early Soviet attempts with the Mars 2 and 3 missions utilized tethered Prop-M rovers. NASA’s progression moved from the Pathfinder mission’s Sojourner rover to the highly advanced Curiosity and Perseverance rovers, the latter of which introduced aerial exploration via the Ingenuity helicopter.
-*   **Deep Space:** China’s program has expanded from lunar missions to interplanetary exploration with the Tianwen-1 Mars mission and plans for near-Earth asteroid exploration with Tianwen-2. Additionally, missions like the Voyager probes and astronomical instruments like the Hubble and James Webb Space Telescopes represent milestones in observing the outer solar system and the universe.
+### Mars Exploration and Deep-Space Probes
+Exploration of the Martian surface has progressed from tethered rovers (Soviet Mars 2/3) and dependent landers (Mars Pathfinder) to highly autonomous, multi-instrumented rovers like Curiosity and Perseverance. These modern missions integrate advanced technologies such as powered flight (Ingenuity helicopter) and resource utilization (MOXIE oxygen production). Simultaneously, deep-space exploration has advanced through the Voyager program, which utilized planetary flybys to gain velocity, building upon the earlier Pioneer missions to reach the edge of the Solar System.
 
-### Commercial and Modern Advancements
-Modern spaceflight is increasingly defined by reusability and private-sector participation. SpaceX has established a new milestone with the partially reusable Falcon 9 launch vehicle and the Dragon 2 capsule, which support missions to the ISS and geostationary orbits. These advancements, alongside NASA’s Artemis program, represent the current shift toward sustained lunar presence and continued deep-space exploration.
+### Astronomical Observation and Commercialization
+Space-based observation began with the Hubble Space Telescope, which demonstrated the feasibility of orbital maintenance via the Space Shuttle. This legacy continues with the James Webb Space Telescope, which utilizes advanced infrared sensitivity and a distant position at the Sun–Earth L2 point. Furthermore, the industry has seen a transition toward commercialization, with companies like SpaceX developing reusable launch vehicles (Falcon 9) and heavy-lift capabilities (Falcon Heavy, Starship) to support cargo and crew delivery, effectively diversifying the technological landscape of modern aerospace.
 
 [vector_rag | gemini]
 Based on the provided text, the major technological milestones and their evolutionary progression are as follows:
@@ -145,29 +148,23 @@ These milestones build on each other through a process of **scaling and refineme
 === [5/12] Which people had the greatest influence on space exploration, and what did each contribute?
 
 [graphrag_L2 | gemini]
-The history of space exploration has been shaped by a diverse group of leaders, engineers, and astronauts across several nations and private organizations. Their contributions range from foundational research and policy-making to engineering breakthroughs and historic missions.
+The history of space exploration has been shaped by a diverse group of political leaders, scientists, engineers, and astronauts who established the institutional, technical, and operational foundations for modern spaceflight.
 
-### **Soviet and Russian Space Program**
-Early Soviet achievements were driven by a group of pioneering figures including **Sergei Korolev, Friedrich Zander, Valentin Glushko, Nikolai Tikhomirov, and Georgy Langemak**. Working within organizations like GIRD, the Gas Dynamics Laboratory, and RNII, they developed hybrid propellant rockets, the R-7 rocket, and the Katyusha launcher. 
-*   **Yuri Gagarin** became the first human in space, supported by figures such as **Nikolai Kamanin** and medical overseer **Major General Konstantin Borodin**, with backup cosmonauts **Gherman Titov** and **Grigori Nelyubov**. 
-*   **Alexei Leonov** achieved the first spacewalk, and **Valeri Polyakov** set a long-duration spaceflight record of 437 days aboard the Mir space station. **Vladimir Seryogin** is also noted for his role as a flight instructor.
+### **Political and Institutional Leadership**
+*   **United States:** President **Dwight D. Eisenhower** created NASA and initiated Project Mercury. President **John F. Kennedy** set the national goal of landing a human on the Moon, chartering the Apollo program. **James E. Webb**, as NASA Administrator, executed these ambitious objectives. Later, President **Donald Trump** and Vice President **Mike Pence** guided the National Space Council to establish lunar exploration goals. **Barack Obama** established the Augustine Committee for space policy review.
+*   **India:** Prime Minister **Jawaharlal Nehru** established the Indian National Committee for Space Research (INCOSPAR), while **Indira Gandhi** oversaw its transition into the Indian Space Research Organisation (ISRO).
+*   **Europe:** **Edoardo Amaldi** and **Pierre Auger** were instrumental in the scientific community's push for a common space agency. Auger led the European Space Research Organisation (ESRO), and **Renzo Carrobio di Carrobio** served as the first Secretary General of the European Launcher Development Organisation (ELDO). **Jean-Jacques Dordain** later served as Director General of the European Space Agency (ESA).
+*   **China:** Various leaders have directed the China National Space Administration (CNSA), including **Liu Jiyuan, Luan Enjie, Sun Laiyan, Chen Qiufa, Ma Xingrui, Xu Dazhe, Tang Dengjie,** and current administrator **Zhang Kejian**.
 
-### **American Space Program and Policy**
-American efforts were guided by both political leadership and engineering expertise:
-*   **Political Leadership:** **President Dwight D. Eisenhower** initiated Project Mercury and set policies for military astronaut selection. **President John F. Kennedy** established the goal of a lunar landing, accelerating the space race. **President Richard Nixon** and **President Jimmy Carter** recognized the achievements of the Apollo era, while **President Barack Obama** established the Augustine Committee for policy review. More recently, **President Donald Trump** and **Vice President Mike Pence** guided lunar exploration goals through the National Space Council.
-*   **Engineering and Management:** **Wernher von Braun**, influenced by **Hermann Oberth**, led the development of the V-2 rocket and the Saturn V launch vehicle at the Marshall Space Flight Center, overseen by **George Mueller**. **Christopher C. Kraft Jr.**, **Jim Chamberlin**, and **Gus Grissom** provided vital leadership for early human spaceflight, while **Deke Slayton** managed astronaut assignments.
-*   **Astronauts:** **Neil Armstrong** (the first to walk on the Moon), **Buzz Aldrin**, **Michael Collins**, **Jim Lovell**, and **John Glenn** are recognized for their historic roles in the Mercury, Gemini, and Apollo programs.
+### **Scientific and Engineering Pioneers**
+*   **Soviet Union:** **Sergei Korolev** was the most influential figure, overseeing the R-1 development and the artificial satellite program. **Mikhail Tikhonravov** led early rocket research, while **Friedrich Zander** pioneered gravity assist methods. **Nikolai Tikhomirov** researched solid fuel, and **Valentin Glushko** designed engines. **Georgy Langemak** and **Ivan Kleymyonov** developed early missile technologies. **Vladimir Chelomei** led the Almaz military space station program.
+*   **United States:** **Wernher von Braun** designed the Saturn V rocket for the Apollo program. **Christopher C. Kraft Jr., Jim Chamberlin,** and **Gus Grissom** provided essential leadership for the Mercury and Gemini programs. **Lyman Spitzer** conceptualized space-based observatories, and **Edwin Hubble** provided the foundation for the Hubble Space Telescope. **Gary Flandro** conceptualized the "Grand Tour" program for deep-space exploration, and **William Pickering** influenced the naming of the Voyager program.
+*   **India:** **Vikram Sarabhai** recommended the establishment of INCOSPAR and founded the Physical Research Laboratory. **Homi J. Bhabha** built critical scientific infrastructure. **P Veeramuthuvel** served as the project director for the Chandrayaan-3 lunar mission.
+*   **Private Sector:** **Elon Musk** founded SpaceX, developing the Falcon and Starship launch vehicles. Key contributors to his efforts include **Gwynne Shotwell, Tom Mueller, Chris Thompson, Robert Zubrin,** and **Jim Cantrell**.
 
-### **European and International Cooperation**
-European space efforts were fostered by **Edoardo Amaldi** and **Pierre Auger**, who worked to create a common space agency. **Pierre Auger** headed the European Space Research Organisation, while **Renzo Carrobio di Carrobio** served as the first Secretary General of the European Launcher Development Organisation (ELDO).
-
-### **Indian Space Program**
-India’s space program was established through the leadership of **Jawaharlal Nehru, Vikram Sarabhai, and Indira Gandhi**, who founded initiatives like INCOSPAR and the Physical Research Laboratory. **P Veeramuthuvel** later directed the Chandrayaan-3 lunar mission, which utilized the Vikram lander and Pragyan rover.
-
-### **Private Sector and Scientific Contributions**
-*   **Elon Musk** founded SpaceX, developing the reusable Falcon 9 rocket and Dragon 2 capsule to facilitate missions to the International Space Station.
-*   **William Pickering** is credited with suggesting the name "Voyager" for deep-space missions, and **Gary Flandro** conceptualized the "Grand Tour" program at the Jet Propulsion Laboratory. 
-*   **Jared Isaacman** is noted as serving as the NASA administrator as of December 2025.
+### **Astronauts and Mission Contributors**
+*   **Yuri Gagarin** became the first human in space. His mission was supported by **Nikolai Kamanin** and the Central Flight Medical Commission led by **Konstantin Fyodorovich Borodin**, with **Gherman Titov** and **Grigori Nelyubov** serving as backup pilots. **Valeri Polyakov** set endurance records on the Mir space station.
+*   **Neil Armstrong** and **Buzz Aldrin** were the first humans to walk on the Moon. **Michael Collins** served as the Command Module Pilot for Apollo 11. Other notable astronauts include **Alan Shepard** (first American in space), **John Glenn** (first American to orbit Earth), and **Jim Lovell**, who commanded Apollo 13. **Deke Slayton** managed astronaut assignments as Director of Flight Crew Operations. **Zhang Rongqiao** served as the mission designer for China’s Zhurong rover.
 
 [vector_rag | gemini]
 Based on the provided context, it is not possible to determine which people had the "greatest" influence on space exploration, as the text does not provide a ranking or comparative assessment of influence.
@@ -186,17 +183,26 @@ However, the context identifies several individuals who made significant contrib
 === [6/12] How have different countries approached space exploration differently?
 
 [graphrag_L2 | gemini]
-The approaches to space exploration have evolved from a period of intense geopolitical rivalry to a modern era defined by international collaboration.
+The approaches to space exploration have evolved from intense geopolitical rivalry during the Cold War toward a modern framework of integrated global partnership. These strategies have been shaped by distinct national priorities, technological development paths, and shifting political landscapes.
 
-### The Cold War Era: Geopolitical Rivalry
-During the Cold War, space exploration was driven by competition between the United States and the Soviet Union. 
-*   **The Soviet Approach:** The Soviet space program prioritized achieving historic milestones to demonstrate technological superiority. Key initiatives included the launch of Sputnik 1, the development of the R-7 Semyorka missile, animal spaceflights (such as Laika), the Salyut space station program, and lunar missions like Luna 2. Additionally, the Soviets conducted Mars exploration, such as the Mars 2 and Mars 3 missions, which utilized tethered Prop-M rovers.
-*   **The American Approach:** The U.S. strategy was often reactive, characterized by national mandates such as President Kennedy’s goal to land an astronaut on the Moon by the end of the 1960s. This built upon earlier initiatives like Project Mercury and the development of intercontinental ballistic missiles, such as the Atlas. A significant component of American progress involved the work of Wernher von Braun, who developed the Saturn V rocket for the Apollo program after relocating to the U.S. following his work on the V-2 rocket in Germany.
+### The Cold War Era: Rivalry and Technological Superiority
+During the mid-20th century, space exploration was defined by a competition for military and technological dominance between the United States and the Soviet Union.
+*   **The Soviet Union:** Under leaders like Sergei Korolev, the Soviet approach prioritized achieving historic "firsts" to demonstrate capability. This included the 1957 launch of Sputnik 1, the development of the R-7 Semyorka missile, and milestones such as animal spaceflights, the Vostok human spaceflight program, and the Salyut and Mir space stations. Their strategy was characterized by centralized decision-making through entities like OKB-1 and the USSR Academy of Sciences.
+*   **The United States:** The U.S. approach was initially reactive, characterized by structured, government-led initiatives designed to catch up to Soviet achievements. Following the "Sputnik crisis," the U.S. established NASA and launched programs like Project Mercury, Gemini, and Apollo. This effort relied heavily on industrial partnerships with private contractors (such as Boeing, North American Aviation, and IBM) and the integration of expertise from German engineers brought to the U.S. via Operation Paperclip. The U.S. goal was solidified by President Kennedy’s 1961 mandate to land a man on the Moon.
 
-### The Shift Toward Global Cooperation
-In contrast to the competitive nature of the mid-20th century, contemporary space exploration is increasingly defined by international partnerships and shared scientific initiatives.
-*   **Collaborative Frameworks:** Modern efforts, such as the Artemis program, involve cooperation between agencies like NASA, the European Space Agency (ESA), and the Canadian Space Agency (CSA). The International Space Station (ISS) serves as a primary example of this model, supported by a partnership between NASA, ESA, Roscosmos, JAXA, and the CSA.
-*   **Integration of International Efforts:** Even programs with distinct historical roots have adopted collaborative models. For instance, the Russian space program integrated international cooperation into its long-term orbital infrastructure, such as the Mir space station, and partnered with the U.S. on the STS-71 space shuttle mission. Similarly, India’s space program has engaged in international collaboration, such as the 1975 launch of the Aryabhata satellite, which was facilitated by the Soviet agency Interkosmos. Current global efforts also include international support for Indian space missions, reflecting a broader trend of shared scientific goals.
+### Evolution Toward International Cooperation
+Over time, the focus shifted from independent competition to collaborative frameworks:
+*   **Shared Infrastructure:** The International Space Station (ISS) represents the primary model for modern cooperation, established in 1993 between the U.S. and the Russian Federation, with additional support from the ESA, JAXA, and CSA. This model emphasizes shared logistics, cargo resupply, and integrated scientific research.
+*   **Scientific Partnerships:** Organizations like the European Space Agency (ESA) frequently partner with NASA on major projects, such as the James Webb Space Telescope and the Artemis program. These collaborations often involve shared infrastructure, such as the ESA’s ESTRACK providing support for missions led by other nations, including India’s ISRO.
+
+### Distinct National Strategies
+While cooperation is common, nations maintain specific strategic philosophies:
+*   **India:** India’s approach combines early reliance on international partnerships—such as joining the Soviet Interkosmos program to launch its first satellite—with a strong drive toward indigenous development. The Indian Space Research Organisation (ISRO) has institutionalized its efforts under the Department of Space, focusing on developing its own launch vehicles (like the SLV-3 and LVM3) and domestic payload development.
+*   **China:** The China National Space Administration (CNSA) has focused on a series of independent, high-profile milestones, including the Chang'e lunar exploration program (notably the first landing on the far side of the Moon), the Tianwen-1 Mars mission, and the construction of the Tiangong space station.
+*   **The European Space Agency (ESA):** The ESA balances global scientific partnerships with a commitment to maintaining independent launch capabilities, evidenced by the development of the Ariane and Vega rocket families.
+
+### Policy and Constraints
+National approaches are also influenced by legislative and political mandates. For example, the United States has utilized policies like Space Policy Directive 1 to guide its current Artemis program, while simultaneously maintaining restrictive policies, such as the congressional exclusion of the CNSA from NASA cooperation since 2011. Conversely, other projects, such as the Rosalind Franklin rover, have faced delays due to the suspension of cooperation with specific international partners, highlighting the sensitivity of space exploration to broader geopolitical relations.
 
 [vector_rag | gemini]
 Based on the provided context, different countries and organizations have approached space exploration with varying structures, goals, and collaborative strategies:
@@ -208,217 +214,23 @@ Based on the provided context, different countries and organizations have approa
 
 === [7/12] What risks, failures and safety challenges come up across the documents, and how were they addressed?
 
-[graphrag_L2 | gemini]
-Across the provided documents, risks, failures, and safety challenges in space exploration are categorized into three primary areas: technical malfunctions, political instability, and human health/operational safety.
-
-### Technical Failures and Mission Challenges
-Several missions faced significant technical setbacks, often resulting in the loss of equipment or mission objectives:
-*   **Apollo 13:** An in-flight oxygen tank explosion forced the crew to abort their lunar landing. Despite the critical nature of this failure, the crew was able to return to Earth safely.
-*   **Soviet Mars Missions:** The Mars 2 probe suffered a total failure upon landing, destroying its Prop-M rover. The Mars 3 mission successfully landed but lost communication shortly after touchdown, rendering its tethered rover unusable.
-*   **Mitigation:** The provided documents do not detail specific technical protocols or engineering strategies used to mitigate these specific failures, noting only that these were early attempts at surface exploration.
-
-### Political and Human Factors
-The documents highlight how external environments and human health can pose catastrophic risks to space programs:
-*   **Political Repression:** During the Soviet Great Purge, the political climate acted as a major failure point for the space program. The arrest, imprisonment, and execution of leading scientists and engineers—such as Nikolai Tikhomirov and Georgy Langemak—severely hindered the continuity of research and progress.
-*   **Health and Personnel Risks:** Astronaut health management was a documented challenge, exemplified by Charles Duke contracting rubella, which led to the exposure of Ken Mattingly. Additionally, the field of space exploration saw tragic loss of life, such as the death of Yuri Gagarin and flight instructor Vladimir Seryogin in a MiG-15 aircraft crash.
-*   **Mitigation:** Procedural safeguards were utilized in some instances to manage personnel readiness. For example, the selection of cosmonauts for the Vostok 1 mission involved a rigorous medical commission overseen by Major General Konstantin Borodin and the support of Nikolai Kamanin.
-
-### Limitations in Reporting
-Many of the provided documents do not contain information regarding risks, failures, or safety challenges. Reports concerning the Saturn V rocket, the Mir and Salyut 7 space stations, the Apollo 11 mission, SpaceX operations, and general global space agency initiatives focus on infrastructure, technological development, or organizational leadership rather than operational risk management or specific safety incidents.
-
-[vector_rag | gemini]
-Based on the provided documents, the following risks, failures, and safety challenges were identified and addressed:
-
-**Spaceflight and Mission Risks**
-*   **Oxygen Tank Explosion (Apollo 13):** A routine stir of an oxygen tank ignited damaged wire insulation, causing an explosion that disabled electrical and life-support systems. 
-    *   *Resolution:* The crew transferred to the Lunar Module (LM) as a lifeboat. Mission Control improvised procedures to allow the LM to support three men for four days instead of two. They also improvised a solution to adapt Command Module carbon dioxide scrubber cartridges for use in the LM.
-*   **Reentry Heating:** Air compression during reentry creates temperatures exceeding 10,000 °F.
-    *   *Resolution:* Research using nuclear warheads from ballistic missiles demonstrated that a blunt, forward-facing heat shield could solve the heating problem.
-*   **Launch and Flight Hazards:** Risks included explosions, high g-forces, vibrations, radiation, and micrometeoroid strikes.
-    *   *Resolution:* NASA employed a launch escape system, pressurized chambers/space suits, and a progressive test program. Experience from satellites suggested micrometeoroid risk was negligible.
-*   **Landing Failures (Chandrayaan-2/3):** Chandrayaan-2 failed due to attitude increase during the camera coasting phase.
-    *   *Resolution:* For Chandrayaan-3, ISRO allowed the lander to control attitude and thrust during all descent phases, increased the attitude correction rate, added laser Doppler velocimetry, strengthened impact legs, and added multiple contingency systems.
-
-**Space Debris**
-*   **Collisions:** Space debris (defunct objects, fragments, paint flecks) poses a risk to spacecraft, causing damage akin to sandblasting.
-    *   *Resolution:* The International Space Station (ISS) uses Whipple shielding and maneuvers to avoid known debris with a collision chance over 1/10,000. Scientists are also encouraging increased vigilance regarding airspace closures during debris reentry.
-
-**Operational and Management Challenges**
-*   **Flight Director Authority:** During the Mercury program, a flight director's decision was overruled by managers, leading to a potential safety risk.
-    *   *Resolution:* A rule was implemented that the flight director's word is absolute during a mission; to overrule them, NASA would have to fire them on the spot.
-*   **Health/Personnel:** Ken Mattingly was grounded from Apollo 13 due to exposure to rubella.
-    *   *Resolution:* He was replaced by Jack Swigert.
-*   **Budgetary/Programmatic Uncertainty:** Budget cuts and a lack of approved missions created uncertainty for the Mars Exploration Program.
-    *   *Resolution:* NASA responded to recommendations from the Planetary Science Decadal Survey to launch a new Mars rover (Perseverance) with specific scientific objectives.
-
-**Technical/Design Improvements**
-*   **Rover Durability:** Curiosity’s wheels sustained damage.
-    *   *Resolution:* Perseverance was designed with thicker, more durable aluminum wheels with a greater diameter and curved titanium spokes for support.
-
-=== [8/12] What are the main scientific goals of uncrewed missions and space telescopes in the corpus?
-
-[graphrag_L2 | gemini]
-Based on the provided documents, the scientific goals of uncrewed missions vary by their target and mission profile. While many reports focus on organizational history, infrastructure, or geopolitical context rather than specific research objectives, the following scientific goals are identified:
-
-**Exploration of the Outer Solar System**
-The primary goal of missions such as Voyager 1, Voyager 2, Pioneer 10, Pioneer 11, and New Horizons was to explore the outer planets and the outer regions of the Solar System. Specific achievements include:
-*   **Voyager 2:** Explored Jupiter, Saturn, Uranus, and Neptune.
-*   **Voyager 1:** Conducted a flyby of Saturn’s moon Titan before entering interstellar space.
-*   **General Objectives:** These missions aimed to advance the understanding of the outer solar system and the region where the Sun’s magnetic field becomes warped at the edge.
-
-**Mars Exploration**
-Uncrewed missions to Mars are focused on robotic exploration and geological investigation. The Mars 2020 mission, featuring the Perseverance rover and the Ingenuity helicopter, is specifically tasked with exploring the Jezero Crater and investigating potential biosignatures within rocks, such as those found at Cheyava Falls.
-
-**Other Missions and Instruments**
-While several documents mention specific missions and instruments, they do not detail their scientific objectives:
-*   **Lunar Missions:** Missions such as the Chang'e series (China), Chandrayaan-3 (India), and the Soviet Luna 2 are noted for their historical and technological achievements rather than their specific scientific goals.
-*   **Space Telescopes:** Although the Hubble Space Telescope and the James Webb Space Telescope are mentioned, the provided documents do not contain information regarding their scientific research objectives.
-*   **Commercial and International Programs:** Initiatives involving SpaceX, the Artemis programme, and various international space agencies are discussed in the context of organizational leadership, government partnerships, and historical milestones rather than scientific intent.
-
-[vector_rag | gemini]
-Based on the provided context, the scientific goals are as follows:
-
-**NASA’s Mars Exploration Program (Long-term goals):**
-*   Determine whether life ever arose on Mars.
-*   Characterize the climate of Mars.
-*   Characterize the geology of Mars.
-*   Prepare for human exploration of Mars.
-
-**Spirit and Opportunity Rovers:**
-*   Investigate the history of water on Mars.
-
-**James Webb Space Telescope (JWST):**
-*   Conduct infrared astronomy to view objects too old, distant, or faint for the Hubble Space Telescope.
-*   Observe the first stars and the formation of the first galaxies.
-*   Perform detailed atmospheric characterization of potentially habitable exoplanets.
-
-**Alpha Magnetic Spectrometer (AMS):**
-*   Detect dark matter and answer other fundamental questions about the universe.
-
-**General/Other:**
-*   The context notes that NASA distinguishes between "mission" objectives (related to space technology and development) and "science" objectives (met by instruments during their mission). Science instruments are chosen and designed based on these science objectives and goals.
-
-=== [9/12] How has international cooperation in space evolved from the Space Race to today?
-
-[graphrag_L2 | gemini]
-The evolution of international cooperation in space has transitioned from an era of intense geopolitical rivalry to a framework defined by global partnerships and collaborative scientific exploration.
-
-### The Cold War Era: Competition and Rivalry
-The origins of space exploration were defined by the Cold War rivalry between the United States and the Soviet Union. This period was characterized by competitive milestones, including the launch of Sputnik 1, the development of the R-7 Semyorka missile, the testing of American Atlas intercontinental ballistic missiles, and the race to land an astronaut on the Moon by the end of the 1960s. During this time, space efforts were largely driven by technological and military competition.
-
-### Transition Toward Collaboration
-The shift from competition to cooperation began as geopolitical tensions eased, leading to formal agreements between the United States and the Russian Federation. Early examples of this transition included collaborative efforts during the Mir space station era, such as the docking of the space shuttle mission STS-71 and cooperation with the European Space Agency (ESA). 
-
-Other historical milestones also marked the early stages of international engagement, such as the 1975 launch of Aryabhata—India’s first satellite—by the Soviet agency Interkosmos. Additionally, the foundational period of European space efforts saw the creation of the European Space Research Organisation (ESRO) and the European Launcher Development Organisation (ELDO), which served as the precursors to the modern European Space Agency.
-
-### Modern Collaborative Frameworks
-Today, international cooperation has evolved into a robust, multi-agency framework. Key developments include:
-
-*   **The International Space Station (ISS):** This serves as a primary habitable laboratory supported by a partnership between NASA, ESA, Roscosmos, JAXA, and the CSA.
-*   **Major Initiatives:** NASA continues to manage large-scale projects like the Artemis program, which maintains global collaborations with agencies such as JAXA.
-*   **Broadened Partnerships:** Modern space exploration involves a wide range of international support, including partnerships with the Canadian Space Agency and support for Indian space missions. 
-*   **Global Recognition:** Contemporary missions, such as those conducted by China’s space program, have gained international recognition and awards from organizations like the International Astronautical Federation and the Royal Aeronautical Society, reflecting a global community that values shared scientific achievement.
-
-[vector_rag | gemini]
-Based on the provided context, international cooperation in space has evolved as follows:
-
-*   **The Space Race Era:** The Space Race was characterized by a competition between the United States and the Soviet Union. However, a period of détente led to the April 1972 agreement on the cooperative Apollo–Soyuz Test Project (ASTP), which resulted in a joint rendezvous in Earth orbit in July 1975 and the development of an international docking standard (APAS-75). This is considered by many observers to be the final act of the Space Race, marking a gradual transition from competition to cooperation.
-*   **Post-Cold War:** The collapse of the Soviet Union allowed the US and the newly reconstituted Russian Federation to end their Cold War competition in space by agreeing in 1993 on the Shuttle–Mir and International Space Station (ISS) programs.
-*   **Today:** The International Space Station (ISS) represents the product of international cooperation, operated by five partner space agencies: NASA (United States), Roscosmos (Russia), ESA (Europe), JAXA (Japan), and CSA (Canada). It is the first space station built, maintained, and crewed through international cooperation. Additionally, the European Space Agency (ESA) now collaborates with NASA on the Artemis program and maintains its own international partnerships, having evolved from its origins as a merger of two separate European organizations (ESRO and ELDO) to a 23-member international organization.
-
-=== [10/12] What are the most important long-term challenges for the future of space exploration?
-
-[graphrag_L2 | gemini]
-Based on the provided documents, there is no information available to identify or outline the most important long-term challenges for the future of space exploration.
-
-The available reports focus on the following areas:
-
-*   **Historical Missions and Programs:** The documents detail the history of spaceflight, including the Apollo missions (such as Apollo 13), crew health incidents, and administrative management of astronaut assignments.
-*   **Infrastructure and Technology:** The texts cover the development of launch vehicles and spacecraft, such as the Falcon 9 and Dragon 2, as well as the history and operations of SpaceX.
-*   **International and Government Collaboration:** The reports discuss partnerships between global space agencies (including the Canadian Space Agency), the Artemis programme, and government oversight by entities like the U.S. Department of Defense and the Federal Aviation Administration.
-*   **Scientific Initiatives:** While the documents mention deep-space survival studies involving resilient organisms like *Deinococcus radiodurans* and the 2009 establishment of the Augustine Committee for space policy review, they do not frame these as solutions to future challenges, nor do they detail the specific findings or strategic obstacles identified by the committee.
-
-[vector_rag | gemini]
-Based on the provided context, the most important long-term challenges for the future of space exploration include:
-
-*   **Human Health and Physiology:** Long-term space exposure poses significant risks to the human body, including muscle atrophy, bone loss, and fluid shifts. Data from 2006 suggested these factors create a significant risk of fractures and movement problems for astronauts landing on a planet after lengthy interplanetary cruises, such as the six-month interval required for a trip to Mars.
-*   **Space Debris:** Space debris represents a risk to spacecraft, with several crewed and un-crewed vessels having been damaged or destroyed. It is considered a negative externality, and systemic factors—including political, legal, economic, and cultural issues—are identified as the greatest impediments to cleaning up near-Earth space.
-*   **Hostile Environment:** The space environment is hostile to life, characterized by intense radiation (protons, subatomic charged particles, and cosmic rays), vacuum, extreme temperatures, and microgravity.
-*   **Medical Diagnosis and Treatment:** There is typically no physician on board the ISS, making the diagnosis and treatment of medical conditions a challenge.
-*   **Economic and Systemic Factors:** There is little commercial incentive to reduce space debris because the associated costs do not accrue to the entities producing it, but rather to all users of the space environment.
-*   **Feasibility of Colonization:** Medical research is currently being used to determine whether long-lasting human spaceflight and space colonization are feasible.
-
-=== [11/12] How did human spaceflight programs evolve from the first crewed flights to modern space stations?
-
-[graphrag_L2 | gemini]
-The evolution of human spaceflight has progressed from foundational early programs to complex, long-term international orbital habitation. This development can be categorized into several key themes:
-
-### Early Foundations and the Space Race
-The era of human spaceflight began with early crewed programs, most notably the United States' Project Mercury, initiated under President Dwight D. Eisenhower. These foundational efforts relied on the leadership and engineering expertise of figures such as Christopher C. Kraft Jr., Jim Chamberlin, and Gus Grissom, with McDonnell Aircraft serving as the prime contractor. Early milestones included John Glenn’s Mercury flight and Alexei Leonov’s pioneering spacewalk. 
-
-The space race intensified under President John F. Kennedy, who set the national goal of landing an astronaut on the Moon by the end of the 1960s. This objective drove the development of the Saturn V rocket—led by Wernher von Braun—and culminated in the historic Apollo lunar landings. Other significant programs during this formative period included Project Gemini.
-
-### Progression of Spacecraft and Launch Systems
-Following the initial lunar missions, American spaceflight evolved through various programs, including the Space Shuttle program, which concluded with the STS-135 mission. Subsequent efforts have focused on modern initiatives such as the Constellation and Artemis programs. These endeavors have been supported by the development of advanced hardware, including the Orion spacecraft and the Space Launch System (SLS). Additionally, private industry has become a key player, with SpaceX, founded by Elon Musk, conducting missions to the International Space Station (ISS) using the Dragon 2 crew capsule.
-
-### Development of Space Stations
-The transition toward long-term orbital habitation was marked by the development of space stations. The Soviet Union played a significant role in this evolution with the Salyut program and the subsequent modular Mir space station. A notable milestone in this era was the Soyuz T-15 mission, which demonstrated the capability to transfer crews between the Mir and Salyut 7 stations.
-
-### Modern International Collaboration
-The current era of human spaceflight is defined by long-term habitation and global partnership. The International Space Station (ISS) serves as the primary habitable laboratory, supported by a collaborative effort involving NASA (United States), ESA (Europe), Roscosmos (Russia), JAXA (Japan), and CSA (Canada). Beyond the ISS, other nations have developed their own orbital infrastructure, such as China’s Tiangong space station, managed by the China National Space Administration (CNSA). 
-
-Strategic goals for ongoing exploration, particularly regarding the Moon, continue to be shaped by modern policy initiatives, such as Space Policy Directive 1, which was guided by the National Space Council under the administration of President Donald Trump and Vice President Mike Pence.
-
-[vector_rag | gemini]
-Based on the provided context, human spaceflight programs evolved from early orbital missions to modern space stations through the following progression:
-
-*   **Early Human Spaceflight:** The era began with programs like the Soviet Vostok and Voskhod, and the US Project Mercury. These programs achieved initial milestones such as the first human in space (Yuri Gagarin), the first woman in space, and the first US suborbital and orbital flights. These missions utilized single-person capsules launched by modified ballistic missiles.
-*   **Advancement and Lunar Goals:** Following Mercury, the US Project Gemini perfected space docking maneuvers essential for crewed lunar landings. This led to the Apollo program, which utilized the Saturn family of rockets to send three-person crews to the Moon, achieving the first human lunar landings.
-*   **Space Stations:** The focus shifted toward long-term habitation in low Earth orbit. The Soviet Salyut program (1971–1986) operated the world's first crewed space stations. This evolved into the modular Mir station (1986–2000), which grew to seven pressurized modules.
-*   **International Cooperation:** The evolution culminated in the International Space Station (ISS), the first space station built and maintained through international cooperation between NASA, Roscosmos, ESA, JAXA, and CSA. It combined previously planned stations (the US's Space Station Freedom and the Soviet Union's Mir-2) and has hosted a continuous human presence since November 2000. The ISS serves as a research laboratory for experiments in microgravity and as a platform for long-term human habitation.
-
-=== [12/12] What connections exist between military rocketry and civilian space programs?
-
-[graphrag_L2 | gemini]
-The connection between military rocketry and civilian space programs is characterized by the repurposing of military-grade hardware, the dual-use nature of engineering expertise, and ongoing government-private partnerships.
-
-### Repurposing Military Technology for Space Exploration
-A primary link between military and civilian programs is the adaptation of ballistic missile technology for space flight. 
-*   **Soviet Union:** The R-7 Semyorka, originally designed by OKB-1 as an intercontinental ballistic missile, served as the foundational launch vehicle for the Soviet space program. The USSR’s Council of Ministers authorized the use of this military platform to launch the "Object PS" satellites (PS-1 and PS-2).
-*   **United States:** The U.S. utilized the Atlas intercontinental ballistic missile to support civilian initiatives, including Project Mercury and the broader technological push toward lunar exploration. Similarly, the Saturn V rocket, developed under the leadership of Wernher von Braun at the Marshall Space Flight Center, was a direct evolution of his earlier work in military rocketry. Von Braun, who initially developed the V-2 rocket for the German military, transitioned to the U.S. under Operation Paperclip to lead missile development for the Army before moving to NASA to oversee the Saturn V for the Apollo program.
-
-### Dual-Use Engineering and Institutional Structures
-The development of space technology often relied on the same community of engineers and institutions that produced military weaponry. In the Soviet Union, figures such as Sergei Korolev and Valentin Glushko, along with research groups like RNII, operated in a dual-use environment. The same technical expertise and organizational structures responsible for military weapons, such as the Katyusha rocket launcher, were simultaneously used to develop the R-7 rocket and hybrid propellant technologies that enabled early space milestones.
-
-### Strategic Competition and Modern Partnerships
-*   **The Cold War:** The competition between the United States and the Soviet Union acted as a catalyst, driving technological and military advancements that bridged the gap between military rocketry and civilian space exploration.
-*   **Modern Private-Public Partnerships:** Contemporary civilian space programs continue to intersect with military interests. SpaceX maintains significant partnerships with the U.S. Department of Defense to facilitate missions to the International Space Station and geostationary transfer orbits using the Falcon 9 and Dragon 2. These operations are further shaped by government governance, including regulatory oversight by the Federal Aviation Administration.
-*   **Personnel Policies:** Beyond technical hardware, the connection extends to human resources; for example, NASA’s selection of astronauts was historically influenced by presidential directives that prioritized the recruitment of military personnel.
-
-[vector_rag | gemini]
-Based on the provided context, the connections between military rocketry and civilian space programs are as follows:
-
-*   **Technological Origins:** Civilian space programs were enabled by developments in ballistic missile capabilities that occurred after World War II. Both the US and the USSR utilized German rocket development assets (such as the A-4/V-2 rocket) captured after the war to leverage the development of their own missiles, which in turn provided the foundation for spaceflight.
-*   **Shared Infrastructure and Hardware:** Civilian space programs frequently used launch vehicles modified from military missiles. For example, NASA’s Project Mercury used Redstone and Atlas launch vehicles, which were modified from military missiles. Similarly, the Soviet R-1 missile was a direct application of experience derived from the German A-4 rocket.
-*   **Institutional Transitions:** Civilian space agencies were often formed by absorbing existing military research and infrastructure. NASA was established by absorbing the Army’s Jet Propulsion Laboratory (JPL), the Army Ballistic Missile Agency, and the Naval Research Laboratory's Project Vanguard.
-*   **Strategic Overlap:** The development of spaceflight capability was driven by national security concerns, specifically the need for intercontinental ballistic missile (ICBM) and satellite reconnaissance capabilities. The "missile gap" fears in the US, stemming from the Soviet development of the R-7 ICBM, accelerated efforts to develop rocket technology that served both military and space exploration goals.
-*   **Personnel:** Military rocket scientists and engineers, such as Wernher von Braun, transitioned into leadership roles within civilian space programs (e.g., NASA) after having worked on military rocket projects.
-*   **Dual-Purpose Technology:** Rocket technology enabled both sides to develop Earth-orbiting satellites for military purposes (such as reconnaissance, signals intelligence, and early warning) and for scientific/civilian exploration. Additionally, the Soviet space program provided key military systems during the Cold War, such as the Zenit, Tselina, and Oko satellites.
+!! Gemini daily free-tier quota used up. Responses so far are cached; rerun the same command tomorrow (or with another model) to resume.
+Reporting the 6 question(s) finished so far.
 
 
 === Summary (mean over questions)
 system         entity cov.  communities  context chars  latency s
-graphrag_L2          5.82%         29.1           6499     341.06
-vector_rag           2.45%         13.3          27595       9.60
+graphrag_L2          7.58%         38.0          18827     248.36
+vector_rag           2.93%         15.8          29258       0.03
 
 Community levels: L0=241, L1=136, L2=118
 
 === LLM judge vs. vector RAG: GraphRAG win rate (wins / losses / ties)
 graphrag_L2
-  comprehensiveness    42%   (5 / 7 / 0)
-  diversity            50%   (6 / 6 / 0)
-  empowerment          42%   (5 / 7 / 0)
-  directness            0%   (0 / 10 / 2)
+  comprehensiveness   100%   (6 / 0 / 0)
+  diversity           100%   (6 / 0 / 0)
+  empowerment         100%   (6 / 0 / 0)
+  directness            0%   (0 / 2 / 4)
 
-Gemini requests this run: 335 (cache hits: 10)
+Gemini requests this run: 157 (cache hits: 12)
 Results written to results\eval.json

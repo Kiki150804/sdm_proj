@@ -27,15 +27,21 @@ from .communities import Community, CommunityStore
 
 _SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
 
-_MAP_PROMPT = """Using ONLY the community report below, answer the question as well as the
-report allows. Return JSON {{"answer": a detailed partial answer (1-3 paragraphs) that keeps the specific names, dates, numbers and facts from the report, "score":
-integer 0-100 for how helpful this report is for answering the question (0 = irrelevant)}}.
+_MAP_PROMPT = """Using ONLY the community report and its supporting details below, answer the
+question as well as they allow. Return JSON {{"answer": a detailed partial answer (2-4
+paragraphs) that cites the specific names, dates, numbers and facts from the details,
+"score": integer 0-100 for how helpful this community is for answering the question
+(0 = irrelevant)}}.
 
 Report: {title}
 {summary}
 
+Supporting details (entities and relationships in this community):
+{details}
+
 Question: {query}
 """
+
 
 _REDUCE_PROMPT = """You are given partial answers to a question, each written from one part of
 a document collection and ordered from most to least helpful. Combine them into one
@@ -73,8 +79,44 @@ def _extractive_partial(query: str, community: Community, relevance: float) -> P
     return PartialAnswer(community.community_id, community.title, " ".join(sentences[:2]), score)
 
 
-def _llm_partial(query: str, community: Community, llm) -> PartialAnswer | None:
-    data = llm.generate_json(_MAP_PROMPT.format(title=community.title, summary=community.summary, query=query))
+def community_details(community: Community, graph_store, max_chars: int = 6000) -> str:
+    """Entity and relationship descriptions behind a community, most connected first.
+
+    The paper's community reports are long and fact-dense; ours are short
+    (4-6 sentences), so the map step also gets the extracted facts they were
+    written from. No extra LLM calls: these come from the graph."""
+    if graph_store is None:
+        return "(none)"
+    graph = graph_store.graph
+    nodes = set(community.nodes)
+    degree = {n: 0 for n in nodes}
+    relations = []
+    for u, v, d in graph.edges(data=True):
+        if u in nodes and v in nodes:
+            degree[u] += 1
+            degree[v] += 1
+            relations.append((u, v, d))
+    lines = []
+    for n in sorted(nodes, key=lambda n: -degree[n]):
+        desc = graph.nodes[n].get("description", "")
+        if desc:
+            lines.append(f"- {graph.nodes[n]['name']}: {desc}")
+    relations.sort(key=lambda e: -(degree[e[0]] + degree[e[1]]))
+    lines += list(dict.fromkeys(f"- {d['sentence']}" for _, _, d in relations))
+    text, used = [], 0
+    for line in lines:
+        if used + len(line) > max_chars:
+            break
+        text.append(line)
+        used += len(line) + 1
+    return "\n".join(text) or "(none)"
+
+
+def _llm_partial(query: str, community: Community, llm, graph_store=None) -> PartialAnswer | None:
+    data = llm.generate_json(_MAP_PROMPT.format(
+        title=community.title, summary=community.summary,
+        details=community_details(community, graph_store), query=query,
+    ))
     if not isinstance(data, dict):
         return None
     try:
@@ -84,13 +126,13 @@ def _llm_partial(query: str, community: Community, llm) -> PartialAnswer | None:
     return PartialAnswer(community.community_id, community.title, str(data.get("answer") or "").strip(), score)
 
 
-def map_step(query: str, communities: list[Community], llm=None) -> list[PartialAnswer]:
+def map_step(query: str, communities: list[Community], llm=None, graph_store=None) -> list[PartialAnswer]:
     if not communities:
         return []
     relevances = _relevance(query, communities)
     partials = []
     for community, relevance in zip(communities, relevances):
-        partial = _llm_partial(query, community, llm) if llm is not None else None
+        partial = _llm_partial(query, community, llm, graph_store) if llm is not None else None
         if partial is None:
             partial = _extractive_partial(query, community, relevance)
         if partial.score > 0 and partial.text:
@@ -129,6 +171,7 @@ def default_level(store: CommunityStore) -> int:
 def global_answer(
     query: str, store: CommunityStore, level: int | None = None, llm=None, max_communities: int | None = None,
     min_size: int = 3,
+    graph_store=None,
 ) -> dict:
     if not store.levels:
         return {"answer": "No communities have been built.", "backend": "extractive", "level": None, "partials": []}
@@ -137,7 +180,7 @@ def global_answer(
     communities = sorted(
         (c for c in store.at_level(level) if len(c.nodes) >= min_size), key=lambda c: c.rank, reverse=True
     )[:max_communities]
-    partials = map_step(query, communities, llm)
+    partials = map_step(query, communities, llm, graph_store)
     result = reduce_step(query, partials, llm)
     result.update(level=level, partials=partials)
     return result

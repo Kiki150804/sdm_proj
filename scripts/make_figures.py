@@ -32,7 +32,7 @@ plt.rcParams.update({"font.size": 13, "axes.spines.top": False, "axes.spines.rig
 
 def save(fig, out: Path, name: str) -> None:
     fig.tight_layout()
-    fig.savefig(out / name, dpi=200, transparent=False, facecolor="white")
+    fig.savefig(out / name, dpi=200, transparent=False, facecolor="white", bbox_inches="tight", pad_inches=0.1)
     plt.close(fig)
     print("wrote", out / name)
 
@@ -69,11 +69,15 @@ def metric_bars(summary: dict, out: Path) -> None:
         ("coverage", "Graph entities mentioned", lambda v: f"{v:.1%}", 100),
         ("diversity", "Communities touched", lambda v: f"{v:.1f}", 1),
         ("context", "Context given to answer (k chars)", lambda v: f"{v:.1f}k", 0.001),
-        ("latency", "Time per question (s)", lambda v: f"{v:.0f}", 1),
+        ("calls", "LLM calls per question", lambda v: f"{v:.0f}", 1),
     ]
+    # Wall-clock latency is dominated by free-tier waits and the disk cache, so
+    # cost is shown as LLM calls: GraphRAG maps every level-2 community with
+    # 3+ entities (21) and reduces once; vector RAG makes one answer call.
+    calls = {n: 22 if n.startswith("graphrag") else 1 for n in names}
     fig, axes = plt.subplots(1, 4, figsize=(14, 4.2))
     for ax, (key, title, fmt, scale) in zip(axes, panels):
-        values = [summary[n][key] * scale for n in names]
+        values = [(calls[n] if key == "calls" else summary[n][key]) * scale for n in names]
         bars = ax.bar(labels, values, color=colors, width=0.6)
         for bar, v in zip(bars, values):
             shown = v / 100 if key == "coverage" else v
@@ -110,6 +114,23 @@ def graph_picture(graph_store: GraphStore, store: CommunityStore, out: Path, lev
               title=f"Largest level-{level} communities")
     ax.axis("off")
     save(fig, out, "graph_communities.png")
+
+    # legend-free, bigger-label version for slides (legend drawn as slide shapes)
+    fig, ax = plt.subplots(figsize=(10, 8))
+    nx.draw_networkx_edges(sub, pos, ax=ax, alpha=0.15, width=0.6)
+    nx.draw_networkx_nodes(
+        sub, pos, ax=ax, node_color=[color_of[n] for n in sub],
+        node_size=[20 + 22 * degree[n] for n in sub], alpha=0.9, linewidths=0,
+    )
+    hubs = sorted(sub, key=lambda n: -degree[n])[:12]
+    labels = {n: graph_store.graph.nodes[n]["name"] for n in hubs}
+    nx.draw_networkx_labels(sub, pos, labels, ax=ax, font_size=12, font_weight="bold")
+    ax.axis("off")
+    save(fig, out, "graph_only.png")
+    (out / "graph_legend.json").write_text(
+        json.dumps([{"title": c.title, "size": len(c.nodes), "color": PALETTE[i]} for i, c in enumerate(top)]),
+        encoding="utf-8",
+    )
 
 
 def level_stats(store: CommunityStore, out: Path) -> dict:
